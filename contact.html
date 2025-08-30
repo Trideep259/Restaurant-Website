@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Poppins:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(120deg, #f8f6f2 60%, #f3e9d2 100%);
+            margin: 0;
+            color: #444;
+        }
+        .main-container {
+            max-width: 1100px;
+            margin: 60px auto 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+        .contact-form {
+            flex: 1 1 400px;
+            min-width: 320px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+            padding: 40px 32px 32px 32px;
+        }
+        .contact-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #bfa76f;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #bfa76f 60%, #e2c97b 100%);
+            margin: 16px auto 28px auto;
+            border-radius: 2px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 14px;
+            margin-bottom: 18px;
+            border: 1px solid #e0d9c8;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #f8f6f2;
+            transition: border-color 0.2s;
+        }
+        .form-control:focus {
+            border-color: #bfa76f;
+            outline: none;
+            background: #fff;
+        }
+        .btn-info {
+            width: 100%;
+            background: #bfa76f;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 13px 0;
+            font-size: 1.1rem;
+            font-family: 'Poppins', Arial, sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+        .btn-info:hover {
+            background: #a68c4a;
+        }
+        .contact-box {
+            flex: 1 1 320px;
+            min-width: 260px;
+            background: #fffbe6;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(191,167,111,0.08);
+            padding: 36px 28px 28px 28px;
+            margin-top: 0;
+        }
+        .contact__box-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #bfa76f;
+            margin-bottom: 18px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+        .contact__box-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact__box-list h6 {
+            font-family: 'Poppins', Arial, sans-serif;
+            font-size: 1.1rem;
+            color: #222;
+            margin-bottom: 10px;
+            margin-top: 19px;
+            font-weight: 600;
+        }
+        .contact__box-list li {
+            margin-bottom: 10px;
+        }
+        .contact__box-list a {
+            text-decoration: none;
+            color: #444;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .contact__box-list a:hover {
+            color: #bfa76f;
+        }
+        .contact__box-list i {
+            margin-right: 8px;
+            color: #bfa76f;
+        }
+        .contact__box-address {
+            margin-top: 24px;
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.7;
+        }
+        .social-links {
+            margin-top: 22px;
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #bfa76f;
+            font-size: 1.4rem;
+            transition: color 0.2s;
+        }
+        .social-links a:hover {
+            color: #a68c4a;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="contact-box">
+            <div class="contact__box-title">Contact Details</div>
+            <ul class="contact__box-list">
+                <h6>Khidderpore Branch</h6>
+                <li><a href="tel:+918481848484"><i class="fa fa-phone"></i>+91 8481848484</a></li>
+                <li><a href="tel:+918420533005"><i class="fa fa-phone"></i>+91 8420533005</a></li>
+                <li><a href="mailto:khidderpore@indiarestaurant.com"><i class="fa fa-envelope"></i>khidderpore@indiarestaurant.com</a></li>
+                <div class="contact__box-address">
+                    123, Khidderpore Road,<br>
+                    Kolkata, West Bengal 700023
+                </div>
+                <h6>Kaikhali Branch</h6>
+                <li><a href="tel:+03348049142"><i class="fa fa-phone"></i>+033 4804 9142</a></li>
+                <li><a href="tel:+919903980011"><i class="fa fa-phone"></i>+91 99039 80011</a></li>
+                <li><a href="mailto:kaikhali@indiarestaurant.com"><i class="fa fa-envelope"></i>kaikhali@indiarestaurant.com</a></li>
+                <div class="contact__box-address">
+                    45, Kaikhali Main Road,<br>
+                    Kolkata, West Bengal 700052
+                </div>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f" title="Facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp" title="WhatsApp"></i></a>
+            </div>
+        </div>
+        <form class="contact-form">
+            <div class="contact-title">Contact Us</div>
+            <div class="divider"></div>
+            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="email" class="form-control" placeholder="Your Email" required>
+            <input type="text" class="form-control" placeholder="Contact No" required>
+            <input type="text" class="form-control" placeholder="Subject" required>
+            <textarea class="form-control" placeholder="Your Message..." rows="4" required></textarea>
+            <button class="btn-info" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+        </form>
+        
+    </div>
+</body>
+</html>

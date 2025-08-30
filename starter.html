@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starter Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Poppins:400,500&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f8f6f2;
+      margin: 0;
+      padding: 0;
+      color: #444;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      padding: 40px 32px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+
+    .menu-title {
+      width: 100%;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #bfa76f;
+      margin: 18px auto 32px;
+      border-radius: 2px;
+    }
+
+    .menu-section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #bfa76f;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title span {
+      font-size: 1.5rem;
+    }
+
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.menu-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #f0ece2;
+      font-size: 1.08rem;
+    }
+
+    ul.menu-list li span:last-child {
+      float: right;
+      color: #bfa76f;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div style="width:100%;">
+      <div class="menu-title">Starters Menu</div>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Left Column -->
+    <div style="flex:1 1 320px; min-width:280px;">
+      <div class="menu-section">
+        <div class="section-title"><span>🥗</span> Veg Starters</div>
+        <ul class="menu-list">
+          <li><span>Paneer Tikka</span><span>₹140</span></li>
+          <li><span>Crispy Chilli Baby Corn</span><span>₹120</span></li>
+          <li><span>Veg Spring Rolls</span><span>₹110</span></li>
+          <li><span>Cheese Balls</span><span>₹130</span></li>
+          <li><span>Dahi Ke Kebab</span><span>₹125</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <div class="section-title"><span>🍗</span> Non-Veg Starters</div>
+        <ul class="menu-list">
+          <li><span>Chicken Tikka</span><span>₹180</span></li>
+          <li><span>Chilli Chicken (Dry)</span><span>₹160</span></li>
+          <li><span>Fish Fingers with Tartar Sauce</span><span>₹170</span></li>
+          <li><span>Mutton Seekh Kebab</span><span>₹190</span></li>
+          <li><span>Garlic Butter Prawns</span><span>₹200</span></li>
+          <li><span>Chicken Lollipop</span><span>₹150</span></li>
+          <li><span>Tandoori Chicken (Half/Full)</span><span>₹220/₹400</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <div class="section-title"><span>🥤</span> Accompaniments</div>
+        <ul class="menu-list">
+          <li><span>Green Salad</span><span>₹80</span></li>
+          <li><span>Peanut Masala</span><span>₹90</span></li>
+          <li><span>Papad Platter</span><span>₹70</span></li>
+          <li><span>Hummus with Pita</span><span>₹110</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div style="flex:1 1 320px; min-width:280px;">
+      <div class="menu-section">
+        <div class="section-title"><span>🍲</span> Soups</div>
+        <ul class="menu-list">
+          <li><span>Sweet Corn Soup</span><span>₹90</span></li>
+          <li><span>Hot & Sour Soup</span><span>₹90</span></li>
+          <li><span>Cream of Mushroom Soup</span><span>₹100</span></li>
+          <li><span>Manchow Soup</span><span>₹90</span></li>
+          <li><span>Tomato Basil Soup</span><span>₹95</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <div class="section-title"><span>🍞</span> Breads & Sides</div>
+        <ul class="menu-list">
+          <li><span>Garlic Bread (Plain/Cheese)</span><span>₹80</span></li>
+          <li><span>Butter Naan</span><span>₹60</span></li>
+          <li><span>Tandoori Roti</span><span>₹40</span></li>
+          <li><span>Stuffed Kulcha (Cheese)</span><span>₹110</span></li>
+          <li><span>Breadsticks with Dip</span><span>₹80</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <div class="section-title"><span>🌍</span> International Starters</div>
+        <ul class="menu-list">
+          <li><span>Nachos with Salsa & Cheese</span><span>₹130</span></li>
+          <li><span>Mozzarella Sticks</span><span>₹140</span></li>
+          <li><span>Peri-Peri Potato Wedges</span><span>₹120</span></li>
+          <li><span>Chicken Wings (BBQ)</span><span>₹160</span></li>
+          <li><span>Calamari Rings</span><span>₹180</span></li>
+          <li><span>Grilled Fish Skewers</span><span>₹190</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

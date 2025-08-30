@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Course Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Poppins:400,500&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8f6f2 60%, #f3e9d2 100%);
+      margin: 0;
+      padding: 0;
+      color: #444;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.13);
+      padding: 48px 40px 40px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      position: relative;
+    }
+    .menu-title {
+      width: 100%;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.7rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #bfa76f 60%, #e2c97b 100%);
+      margin: 22px auto 38px auto;
+      border-radius: 2px;
+    }
+    .menu-column {
+      flex: 1 1 480px;
+      min-width: 340px;
+      background: #f8f6f2;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(191, 167, 111, 0.07);
+      padding: 32px 24px 24px 24px;
+    }
+    .menu-section {
+      margin-bottom: 38px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: #bfa76f;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: flex-start;
+      letter-spacing: 0.5px;
+      background: #fffbe6;
+      padding: 8px 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(191, 167, 111, 0.04);
+    }
+    .section-title span {
+      font-size: 1.7rem;
+    }
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.menu-list li {
+      padding: 11px 0 11px 0;
+      border-bottom: 1px dashed #e7e1d2;
+      font-size: 1.08rem;
+      transition: background 0.2s;
+      position: relative;
+      padding-left: 18px;
+    }
+    ul.menu-list li:last-child {
+      border-bottom: none;
+    }
+    ul.menu-list li::before {
+      content: "•";
+      color: #bfa76f;
+      position: absolute;
+      left: 0;
+      font-size: 1.1rem;
+      top: 0;
+    }
+    ul.menu-list li:hover {
+      background: #f3e9d2;
+    }
+    .bg-icon {
+      position: absolute;
+      opacity: 0.8;
+      font-size: 8rem;
+      pointer-events: none;
+    }
+    .bg-icon.left {
+      left: -40px;
+      top: 60px;
+    }
+    .bg-icon.right {
+      right: -40px;
+      top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bg-icon left">🍽️</div>
+    <div class="bg-icon right">🍛</div>
+    <div style="width: 100%;">
+      <div class="menu-title">Main Course Menu</div>
+      <div class="divider"></div>
+    </div>
+    <!-- Left Column -->
+    <div class="menu-column">
+      <div class="menu-section">
+        <div class="section-title"><span>🥗</span> Veg Course</div>
+        <ul class="menu-list">
+          <li><span>Shahi Paneer</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹220</span></li>
+          <li><span>Malai Kofta</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹210</span></li>
+          <li><span>Navratan Korma</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹200</span></li>
+          <li><span>Baingan Bharta</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹180</span></li>
+          <li><span>Bhindi Masala</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹170</span></li>
+          <li><span>Aloo Gobi Masala</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹160</span></li>
+          <li><span>Rajma Masala</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹170</span></li>
+          <li><span>Chole Bhature (Special)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹150</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <div class="section-title"><span>🍗</span> Non-Veg Course</div>
+        <ul class="menu-list">
+          <li><span>Chicken Tikka Masala</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹260</span></li>
+          <li><span>Chicken Chettinad (South Indian)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹270</span></li>
+          <li><span>Mutton Korma</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹320</span></li>
+          <li><span>Mutton Handi</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹330</span></li>
+          <li><span>Fish Tikka Masala</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹290</span></li>
+          <li><span>Kerala Prawns Curry</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹340</span></li>
+          <li><span>Egg Masala Curry</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹170</span></li>
+          <li><span>Keema Matar (Mutton Mince with Peas)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹280</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <div class="section-title"><span>🍜</span> Rice Specialties</div>
+        <ul class="menu-list">
+          <li><span>Veg Pulao</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹160</span></li>
+          <li><span>Mushroom Pulao</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹180</span></li>
+          <li><span>Coconut Rice</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹150</span></li>
+          <li><span>Curd Rice (with Tempering)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹140</span></li>
+          <li><span>Lucknowi Mutton Biryani</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹320</span></li>
+          <li><span>Kolkata Chicken Biryani (with Egg & Potato)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹280</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right Column -->
+    <div class="menu-column">
+      <div class="menu-section">
+        <div class="section-title"><span>🍞</span> Indian Breads</div>
+        <ul class="menu-list">
+          <li><span>Butter Roti</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹40</span></li>
+          <li><span>Tandoori Naan</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹60</span></li>
+          <li><span>Garlic Naan</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹70</span></li>
+          <li><span>Stuffed Paratha (Aloo, Paneer, Onion)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹80</span></li>
+          <li><span>Missi Roti</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹50</span></li>
+          <li><span>Lachha Paratha</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹70</span></li>
+          <li><span>Rumali Roti</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹50</span></li>
+          <li><span>Kulcha (Amritsari, Cheese, Onion)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹80</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <div class="section-title"><span>🌍</span> International</div>
+        <ul class="menu-list">
+          <li><span>Chicken Stroganoff</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹350</span></li>
+          <li><span>Roast Lamb with Mint Sauce</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹420</span></li>
+          <li><span>Veg Risotto (Mushroom / Cheese)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹260</span></li>
+          <li><span>Penne Arrabbiata / Alfredo Pasta</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹240</span></li>
+          <li><span>Thai Green Curry (Veg/Chicken) with Jasmine Rice</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹320</span></li>
+          <li><span>Thai Red Curry (Veg/Chicken) with Rice</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹320</span></li>
+          <li><span>Teriyaki Chicken with Rice</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹340</span></li>
+          <li><span>Grilled Salmon with Lemon Butter Sauce</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹480</span></li>
+          <li><span>Mexican Burrito Bowl (Veg/Chicken)</span> <span style="float:right; color:#bfa76f; font-weight:500;">₹260</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

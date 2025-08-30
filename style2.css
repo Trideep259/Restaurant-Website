@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.custom-navbar {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 18px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.custom-navbar .navbar-brand {
+  color: #fff !important;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+
+.custom-navbar .nav-link {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color .2s;
+  padding-bottom: 4px;
+}
+
+.custom-navbar .nav-link::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  border-bottom: 2px solid #ca8d29;
+  transition: width .3s;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+  width: 60%;
+}
+
+.carousel-inner img {
+  margin-top: 0 !important;
+}
+
+/* footer  */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+footer h5,
+footer h6,
+.contact__box-title {
+  color: #e9cfa6;
+  font-weight: bold;
+}
+
+footer a {
+  color: #e9cfa6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact-box {
+  margin-bottom: 20px;
+}
+
+.about-section .about-left {
+  transform: translateX(-60px);
+}
+
+.about-section .about-right {
+  transform: translateX(60px);
+}
+
+.about-section.visible .about-left,
+.about-section.visible .about-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.speciality-banner {
+  min-height: 350px;
+  width: 100%;
+  background: url('Images/eat-food.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speciality-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  z-index: 1;
+}
+
+.speciality-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 40px 10px;
+}
+
+.speciality-title {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, .7), 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.speciality-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.speciality-cards-section {
+  background: #fff;
+}
+
+.speciality-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .08);
+  transition: box-shadow .3s;
+  cursor: pointer;
+  background: #000;
+}
+
+.speciality-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: transform .4s cubic-bezier(.25, .8, .25, 1);
+}
+
+.speciality-card:hover img {
+  transform: scale(1.08);
+}
+
+.speciality-card-title {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .7);
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+.excellence-section {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.excellence-title {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.excellence-divider {
+  width: 60px;
+  border-bottom: 2px solid #ca8d29;
+  margin-bottom: 16px;
+  height: 0;
+}
+
+.excellence-desc {
+  color: #888;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+.excellence-logos img {
+  margin: 0 18px 0 0;
+  transition: filter .3s, transform .3s;
+}
+
+.excellence-logos img:last-child {
+  margin-right: 0;
+}
+
+.excellence-logos img:hover {
+  filter: brightness(1.1);
+  transform: scale(1.08);
+}
+
+.carousel-item .carousel-dark-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  z-index: 1;
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.carousel-title {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.carousel-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+}

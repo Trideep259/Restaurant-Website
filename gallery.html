@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery & Awards</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Poppins:400,500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: #f8f6f2;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #bfa76f;
+            margin: 20px auto 40px auto;
+            border-radius: 2px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+            overflow: hidden;
+            width: 320px;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 22px 18px 18px 18px;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: #bfa76f;
+            margin-bottom: 8px;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container mt-5">
+        <div class="gallery-title">Awards & Branches</div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="card">
+                <img src="Images/Lead-image_TRA-2024.webp" class="card-img-top" alt="Award">
+                <div class="card-body">
+                    <h5 class="card-title">Best Restaurant 2024</h5>
+                    <p class="card-text">Awarded for excellent service and quality food.</p>
+                </div>
+            </div>
+            <!-- Example branch card -->
+            <div class="card">
+                <img src="Images/iStock-2050814987_Gilles_Rivest_Downtown_Miami_Aerial_1440x900_GAI.jpg"
+                    class="card-img-top" alt="Branch">
+                <div class="card-body">
+                    <h5 class="card-title">Downtown Branch</h5>
+                    <p class="card-text">Our flagship branch, known for its vibrant atmosphere and signature dishes.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80"
+                    class="card-img-top" alt="Branch">
+                <div class="card-body">
+                    <h5 class="card-title">Uptown Branch</h5>
+                    <p class="card-text">A cozy spot perfect for family gatherings and celebrations.</p>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+</body>
+
+</html>

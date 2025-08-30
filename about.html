@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,400|Poppins:400,500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .subtitle {
+            color: #bfa76f;
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #bfa76f;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .about-text {
+            flex: 1 1 400px;
+            min-width: 320px;
+            max-width: 500px;
+        }
+        .about-logo {
+            margin: 30px 0 20px 0;
+            width: 180px;
+        }
+        .about-img {
+            flex: 1 1 350px;
+            min-width: 300px;
+            max-width: 450px;
+            text-align: center;
+        }
+        .about-img img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        @media (max-width: 900px) {
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-img, .about-text {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <div class="subtitle">Welcome To The India Restaurant</div>
+            <div class="main-title">
+                Delicious Food, Friendly Staff, Cozy Atmosphere &<br>
+                Positive Emotions!
+            </div>
+            <div class="divider"></div>
+        </div>
+        <div class="about-section">
+            <div class="about-text center">
+                <div style="text-align: left; margin-top: 20px;">
+                    Haji Syed Mohammad Kalim built a small eatery more than 40 years ago to provide lip-smacking Mughlai dishes at pocket-friendly prices. The place garnered immense popularity in no time because they delivered palatable delicacies consistently at a very reasonable range. Today the proprietors of India Restaurant, Syed Anwar Azeem, Syed Misbah Kalim, and Syed Shahmeer Kalim, took forward the legacy of their father to a different dimension. They have collected their father's dream and changed it into a beautiful reality. The India restaurant currently provides a delightful and vibrant ambiance having a seating arrangement for 300 people. The restaurant now has added heterogeneity in its menu with Indian and Chinese cuisine. This place still holds its roots and swears by serving the best biryani in town. It is also exploring and experimenting with other flavours and cuisines to give new aspects to the place.
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="Images/1.jpg" alt="Delicious Food">
+            </div>
+        </div>
+         <div style="height: 150px;"></div>
+        <!-- Mission & Vision Section -->
+        <div class="mission-vision-section" style="display: flex; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 60px; flex-wrap: wrap;">
+            <div class="mission" style="flex: 1 1 300px; max-width: 350px; text-align: center;">
+                <div style="font-family: 'Playfair Display', serif; font-size: 2rem; color: #222; font-weight: 700;">Our Mission</div>
+                <div class="divider" style="margin: 16px auto 18px auto; width: 50px; height: 3px; background: #bfa76f;"></div>
+                <div style="color: #888; font-size: 1.05rem; margin-bottom: 18px;">
+                    To help our customers enjoy simple edible pleasures and reach their hearts through their stomachs.
+                </div>
+            </div>
+            <div class="mission-img" style="flex: 1 1 300px; max-width: 350px; text-align: center;">
+                <img src="Images/vision-banner.jpg" alt="Mission Food" style="width:100%; max-width:340px; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,0.12);">
+            </div>
+            <div class="vision" style="flex: 1 1 300px; max-width: 350px; text-align: center;">
+                <div style="font-family: 'Playfair Display', serif; font-size: 2rem; color: #222; font-weight: 700;">Our Vision</div>
+                <div class="divider" style="margin: 16px auto 18px auto; width: 50px; height: 3px; background: #bfa76f;"></div>
+                <div style="color: #888; font-size: 1.05rem; margin-bottom: 18px;">
+                    To create an ultimate destination for every food lover in town and lead them to an extraordinary food journey.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
